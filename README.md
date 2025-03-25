@@ -2,141 +2,91 @@ Spend KPI Analysis Documentation
 Overview
 This project focuses on analyzing spending data to derive key performance indicators (KPIs) that help in understanding and optimizing expenditure. The analysis can be used by businesses to monitor their spending patterns, identify cost-saving opportunities, and make data-driven decisions.
 
-Table of Contents
+Table of Contents: 
+1. Project Structure
+
+2. Installation
+
+3. Usage
+
+4. Data Sources
+
+5. Key Performance Indicators (KPIs)
+
+6. Contributing
+
+7. License
+
 Project Structure
 
-Installation
+<img width="754" alt="image" src="https://github.com/user-attachments/assets/5ab77a5f-14f4-4e77-9a74-87f03f7e1380" />
 
-Usage
-
-Data Sources
-
-Key Performance Indicators (KPIs)
-
-Contributing
-
-License
-
-Project Structure
-Copy
-spend-kpi-analysis/
-│
-├── data/                   # Directory containing datasets
-│   └── sample_data.csv     # Sample spending data
-│
-├── notebooks/              # Jupyter notebooks for analysis
-│   └── spend_analysis.ipynb # Main analysis notebook
-│
-├── scripts/                # Python scripts for data processing
-│   └── data_processor.py   # Script for cleaning and processing data
-│
-├── README.md               # Project documentation
-├── requirements.txt        # List of dependencies
-└── LICENSE                 # License file
 Installation
 To set up the project locally, follow these steps:
 
 Clone the repository:
 
-bash
-Copy
-git clone https://github.com/your-username/spend-kpi-analysis.git
-cd spend-kpi-analysis
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/ec4871dc-b80d-4abf-bd04-ee3c67a99969" />
+
 Create a virtual environment:
 
-bash
-Copy
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
+<img width="210" alt="image" src="https://github.com/user-attachments/assets/08a896d8-b299-496a-bd21-de7d59fb4f97" />
 
-bash
-Copy
-pip install -r requirements.txt
+# On Windows use `venv\Scripts\activate`
+
+Install dependencies
+
+<img width="727" alt="image" src="https://github.com/user-attachments/assets/6e36e4b4-4333-4daf-81e5-553e64eb6085" />
+
 Run Jupyter Notebook:
 
-bash
-Copy
-jupyter notebook
-Open the notebooks/spend_analysis.ipynb notebook to start the analysis.
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/813525cf-dd7b-4105-819a-4e0254360022" />
 
-Usage
+Usage:
+
 Data Processing
+
 The scripts/data_processor.py script is used to clean and preprocess the spending data. Run the script as follows:
 
-bash
-Copy
-python scripts/data_processor.py --input data/sample_data.csv --output data/processed_data.csv
-Analysis
-Open the Jupyter notebook notebooks/spend_analysis.ipynb to perform the analysis. The notebook includes:
+<img width="756" alt="image" src="https://github.com/user-attachments/assets/8947b46b-66ae-40eb-9004-0d932c458aef" />
 
-Data loading and exploration
+Packages: 
 
-Calculation of KPIs
+1. matplotlib: For data visualization (e.g., plotting spend trends).
 
-Visualization of spending trends
+2. arviz: For probabilistic modeling and diagnostics (if you're doing Bayesian analysis).
 
-Example KPIs
-Total Spend: Sum of all expenditures.
+3. Theano: A numerical computation library (commonly used with PyMC3 for Bayesian modeling).
 
-Spend by Category: Breakdown of spending by category (e.g., Marketing, Operations).
+4. ipykernel: Ensures Jupyter Notebook can run Python code properly.
 
-Monthly Spend Trend: Visualization of spending over time.
+5. scipy: Provides scientific computing tools (e.g., statistical functions).
+   
+Bayesian analysis (e.g., with PyMC3), ensure you also include it in requirements.txt:
 
-Cost per Unit: Calculation of cost efficiency metrics.
+<img width="191" alt="image" src="https://github.com/user-attachments/assets/b0d67e27-d384-41ca-8f49-b490e5f5de21" />
 
-Data Sources
-The analysis uses a sample dataset (data/sample_data.csv) containing the following columns:
+1. Theano Troubleshooting:
 
-Date: The date of the transaction.
+If users face issues installing Theano, suggest:
 
-Category: The category of the spend (e.g., Marketing, Operations).
+# For Anaconda Users: 
+<img width="226" alt="image" src="https://github.com/user-attachments/assets/f8a2c3fd-9134-4b72-9018-6b9a9a7db624" />
 
-Amount: The amount spent.
+Or use pip install --upgrade theano
 
-Vendor: The vendor or supplier.
+Visualizations:
 
-Replace the sample data with your actual spending data for real-world analysis.
+Jupyter notebook, include examples using matplotlib
 
-Key Performance Indicators (KPIs)
-The following KPIs are calculated in the analysis:
+<img width="314" alt="image" src="https://github.com/user-attachments/assets/fba48fe7-1f04-4a32-8fc9-0cb1b678646f" />
 
-Total Spend: Sum of all spending.
+Bayesian Analysis (Optional):
 
-Spend by Category: Percentage of total spend by category.
+Bayesian stats, add a notebook example:
 
-Monthly Spend Trend: Monthly aggregation of spending.
+<img width="195" alt="image" src="https://github.com/user-attachments/assets/31021122-d1ad-49a3-8055-c02fcc1dcef9" />
 
-Vendor Analysis: Top vendors by total spend.
 
-Cost Efficiency: Cost per unit or cost per outcome (if applicable).
-
-Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/YourFeatureName).
-
-Commit your changes (git commit -m 'Add some feature').
-
-Push to the branch (git push origin feature/YourFeatureName).
-
-Open a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-How to Publish on GitHub
-Create a new repository on GitHub.
-
-Push your local project to the repository:
-
-bash
-Copy
-git remote add origin https://github.com/your-username/spend-kpi-analysis.git
-git branch -M main
-git push -u origin main
-Update the README.md file with your project-specific details.
 
 
